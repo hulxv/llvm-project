@@ -15,6 +15,8 @@ math.h
 .. toctree::
   :hidden:
 
+  algorithms.rst
+  trig.rst
   log.rst
 
 
@@ -379,9 +381,13 @@ Legends:
 * \*: LLVM libc extension.
 * ? Because of a conflict between float16 logb function and bfloat16 log function, the latter is implemented as `log_bf16`.
 
-..
-  TODO(lntue): Add a new page to discuss about the algorithms used in the
-  implementations and include the link here.
+For details on the common algorithmic techniques (range reduction, polynomial
+approximation, Ziv's test, Float128 fallback), see :ref:`math_algorithms`.
+
+For trigonometric and inverse trigonometric function algorithms, see
+:ref:`trig_algorithm`.
+
+For logarithm algorithms, see :ref:`log_algorithm`.
 
 GPU Conformance
 ===============
