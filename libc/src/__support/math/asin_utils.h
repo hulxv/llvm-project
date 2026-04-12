@@ -632,6 +632,10 @@ LIBC_INLINE_VAR constexpr Float128 ONE_OVER_PI_F128 = {
 LIBC_INLINE_VAR constexpr Float128 HALF_F128 = {
     Sign::POS, -128, 0x80000000'00000000'00000000'00000000_u128};
 
+// 1.0 as Float128 (exact).
+LIBC_INLINE_VAR constexpr Float128 ONE_F128 = {
+    Sign::POS, -127, 0x80000000'00000000'00000000'00000000_u128};
+
 // Compute asin(sqrt(u))/(pi*sqrt(u)) in DoubleDouble precision by wrapping
 // asin_eval and multiplying by 1/pi.
 LIBC_INLINE DoubleDouble asinpi_eval(const DoubleDouble &u, unsigned &idx,

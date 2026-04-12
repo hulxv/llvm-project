@@ -4899,6 +4899,17 @@ add_fp_unittest(
 )
 
 add_fp_unittest(
+  acospi_test
+  SUITE
+    libc-math-smoke-tests
+  SRCS
+    acospi_test.cpp
+  DEPENDS
+    libc.hdr.fenv_macros
+    libc.src.math.acospi
+)
+
+add_fp_unittest(
   acospif_test
   SUITE
     libc-math-smoke-tests
